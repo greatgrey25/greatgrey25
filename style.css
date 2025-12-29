@@ -638,12 +638,26 @@ background: radial-gradient(
     opacity: 0.3;
   }
 }
+footer {
+  padding: 5rem 8vw;
+  font-size: 0.9rem;
+  background-color: #f9f5f2;
+  color: #777;
+  text-align: center;
+}
+
 .instagram-link img {
-  width: 20px; /* 로고 크기 */
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-top: 10px;
   transition: transform 0.2s, filter 0.2s;
-  filter: grayscale(100%); /* 흑백 적용 */
+  filter: grayscale(100%);
+}
+
+.instagram-link img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  cursor: pointer;
 }
 
 .instagram-link img:hover {
