@@ -659,8 +659,3 @@ footer {
   filter: grayscale(0%);
   cursor: pointer;
 }
-
-.instagram-link img:hover {
-  filter: grayscale(0%); /* 마우스 오버 시 컬러 */
-  cursor: pointer;
-}
