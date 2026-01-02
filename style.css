@@ -646,16 +646,20 @@ footer {
   text-align: center;
 }
 
-.instagram-link img {
-  width: 30px;
-  height: 30px;
+.instagram-link {
+  color: #999;          /* 기본 회색 */
+  display: inline-flex;
   margin-top: 10px;
-  transition: transform 0.2s, filter 0.2s;
-  filter: grayscale(100%);
 }
 
-.instagram-link img:hover {
+.instagram-icon {
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.instagram-link:hover {
+  color: #E1306C;       /* hover 시 컬러 */
+}
+
+.instagram-link:hover .instagram-icon {
   transform: scale(1.1);
-  filter: grayscale(0%);
-  cursor: pointer;
 }
