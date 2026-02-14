@@ -412,8 +412,8 @@ html {
 /* 이미지 안에서 꽉 차게, 잘림 최소화 */
 .program-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   transition: filter 0.5s ease;
   filter: grayscale(100%);
 }
