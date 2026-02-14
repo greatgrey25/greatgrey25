@@ -417,13 +417,15 @@ html {
   position: fixed;
   inset: 0;
   background-color: rgba(0,0,0,0.8);
-  z-index: 10000 !important;
+  z-index: 10000;
 
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.modal.show {
+  display: flex;
+}
 
 .modal-content {
   margin: auto;
@@ -441,7 +443,6 @@ html {
   color: #fff;
   font-size: 40px;
   cursor: pointer;
-  z-index; 10002 !important;
 }
 
 .arrow {
