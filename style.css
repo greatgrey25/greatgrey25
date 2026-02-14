@@ -699,3 +699,23 @@ nav ul {
   display: flex;
   justify-content: space-between;
 }
+
+/* ===== 상단 영역 전체 폭 강제 확장 ===== */
+header {
+  width: 100%;
+}
+
+header > div {
+  width: 100%;
+  max-width: 1500px;   /* ← 여기 숫자 키우면 길어짐 */
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* 메뉴 균등 정렬 */
+header ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
