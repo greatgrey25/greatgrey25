@@ -59,27 +59,24 @@ body {
 .section.purple {
   background-color: #e6e0f8; /* 연한 보라색 */
   color: #333; /* 글자색은 진한 회색으로 읽기 좋게 */
-  background-color: #e6e0f8;
-  color: #333;
 }
 
 #positive-effects .highlight-text {
   font-size: 1.15em; /* 원하는 크기로 조절 */
-  font-size: 1.15em;
 }
 
 
 /* FOOTER */
 .footer {
   padding: 5rem 8vw;
-@@ -74,14 +71,12 @@
+  font-size: 0.9rem;
+  background-color: #f9f5f2;
   color: #777;
 }
 
 /* 기존 연락처 위치 그대로 */
 .footer .contact-info {
   text-align: left; /* 필요에 따라 조정 */
-  text-align: left;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -88,16 +85,27 @@ body {
 .footer .copyright {
   position: absolute;
   bottom: 0;
-@@ -94,7 +89,7 @@
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  width: 100%;
   padding: 10px 0;
 }
 
 /* FADE ANIMATION */
-/* FADE */
 .fade {
   opacity: 0;
   transform: translateY(40px);
-@@ -109,40 +104,7 @@
+  transition: all 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .delay {
   transition-delay: 0.3s;
 }
@@ -138,20 +146,41 @@ body {
 /* IMAGE HERO */
 .image-hero {
   background-image: url("image.jpg");
-@@ -159,124 +121,68 @@
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.image-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: rgba(0, 0, 0, 0.4);
 }
 
 .hero-text {
   position: relative;
   color: #fff;
-/* NAV */
+}
+
+.image-hero h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.image-hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+/* NAVIGATION */
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
   height: 70px;
-  padding: 0 4vw;
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -161,20 +190,33 @@ body {
   font-size: 0.9rem;
 }
 
-.image-hero h1 {
-  font-size: 6rem;
-  font-weight: 300;
+
 .nav-logo {
-  height: 130px;
+  height: 60px;
   width: auto;
   display: block;
 }
 
-.image-hero p {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: #ddd;
+
+.nav-left {
+  letter-spacing: normal;
 }
+
+.nav-left a {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-center {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: #555;
 /* NAVIGATION */ 
 .nav { position: fixed; 
       top: 0; 
@@ -210,23 +252,15 @@ body {
 .nav-center a { 
   text-decoration: none; 
   color: #555; 
-.nav-left {
-  letter-spacing: 0.3em;
 }
 
 .nav-center a:hover {
   color: #111;
-.nav-left a {
-  display: flex;
-  align-items: center;
 }
 
 .nav-right {
-.nav-center {
   display: flex;
   gap: 0.5rem;
-  gap: 3rem;
-  list-style: none;
 }
 
 .lang {
@@ -234,22 +268,15 @@ body {
   border: 1px solid #ddd;
   font-size: 0.75rem;
   cursor: pointer;
-.nav-center a {
-  text-decoration: none;
-  color: #555;
 }
 
 .lang.active {
   border-color: #111;
-.nav-center a:hover {
-  color: #111;
 }
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
-
 .section {
   scroll-margin-top: 100px;
 }
@@ -281,10 +308,6 @@ html {
 .artist-text h2 {
   margin-bottom: 16px;
   letter-spacing: 0.12em;
-/* ⭐⭐⭐ 핵심 수정 부분 ⭐⭐⭐ */
-.section {
-  max-width: 1500px;
-  margin: 0 auto;
 }
 
 .artist-text p {
@@ -297,16 +320,15 @@ html {
   background: rgba(0,0,0,0.35);
   pointer-events: none;
 }
-/* 이하 나머지 전부 그대로 */
 .team-section {
   padding: 160px 8vw;
 }
-@@ -285,21 +191,13 @@
+
+.team-wrap {
   max-width: 1200px;
   padding-left: 60px;
   display: flex;
   gap: 40px; /* 리스트와 오른쪽 팀 info 간격 */
-  gap: 40px;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -321,34 +343,49 @@ html {
 
 .team-list {
   width: 200px;       /* ← 이름 영역 고정 */
-  width: 200px;
   flex-shrink: 0;
   list-style: none;
   padding: 0;
-@@ -311,7 +209,7 @@
+}
+
+.team-list li {
+  font-size: 24px;
+  margin-bottom: 24px;
   cursor: pointer;
   opacity: 0.4;
   transition: opacity 0.3s ease;
   white-space: nowrap; 
-  white-space: nowrap;
 }
 
 .team-list li:hover {
-@@ -320,7 +218,7 @@
+  opacity: 1;
+}
 
 .team-info {
   display: flex;
   flex-direction: row; /* 사진과 경력 문구 가로 배치 */
-  flex-direction: row;
   gap: 20px;
   align-items: flex-start;
 }
-@@ -342,91 +240,46 @@
+
+.team-image {
+  width: 420px;
+  height: 560px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
 #teamCareer {
   max-width: 360px;
   font-size: 15px;
   line-height: 2; 
-  line-height: 2;
   color: #111;
   margin: 0;
 
@@ -396,27 +433,21 @@ html {
   flex-wrap: wrap;
   gap: 40px; /* 사진과 글 사이 간격 */
   align-items: flex-start;
-  gap: 40px;
 }
 
 .program-image img {
   width: 380px; /* 원하는 크기 */
-  width: 380px;
   height: 260px;
   object-fit: cover;
   border-radius: 8px; /* 옵션: 모서리 둥글게 */
   filter: grayscale(100%); /* 기본 흑백 */
   transition: filter 0.5s ease; /* 컬러 전환 */
-  border-radius: 8px;
-  filter: grayscale(100%);
-  transition: filter 0.5s ease;
 }
 
 /* 마우스 오버 시 컬러 */
 .program-image img:hover {
   filter: grayscale(0%);
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -442,7 +473,11 @@ html {
 }
 
 .close {
-@@ -438,222 +291,10 @@
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
   cursor: pointer;
 }
 
