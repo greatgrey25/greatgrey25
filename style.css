@@ -414,8 +414,10 @@ html {
   width: 100%;
   height: auto;
   object-fit: contain;
-  transition: filter 0.5s ease;
+  background-color: #eee;
+  border-radius: 8px;
   filter: grayscale(100%);
+  transition: filter 0.5s ease;
 }
 
 /* 마우스 오버 시 컬러 효과 유지 */
