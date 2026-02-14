@@ -191,7 +191,7 @@ body {
 }
 
 .nav-logo {
-  height: 130px;
+  height: 60px;
   width: auto;
   display: block;
 }
@@ -441,6 +441,7 @@ html {
   color: #fff;
   font-size: 40px;
   cursor: pointer;
+  z-index; 10001;
 }
 
 .arrow {
