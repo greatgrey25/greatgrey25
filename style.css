@@ -396,10 +396,11 @@ html {
 /* 프로그램 섹션 이미지 영역 - 정사각형 */
 .program-wrap {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: flex-start;
+  flex-wrap: wrap;         /* 여러 줄 가능 */
+  justify-content: center; /* 가운데 정렬 */
+  gap: 40px;               /* 이미지 간격 */
 }
+
 
 /* 이미지 영역 크기 정사각형 유지 */
 .program-image {
