@@ -403,7 +403,7 @@ html {
 
 /* 이미지 영역 크기 비율 유지 */
 .program-image {
-  width: 380px;
+  width: 400px;
   aspect-ratio: 380 / 260; /* 이미지 원래 비율에 맞춤 */
   overflow: hidden;
   border-radius: 8px;
@@ -412,8 +412,8 @@ html {
 /* 이미지 안에서 꽉 차게, 잘림 최소화 */
 .program-image img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+  object-fit: unset;
   transition: filter 0.5s ease;
   filter: grayscale(100%);
 }
