@@ -191,8 +191,6 @@ body {
   backdrop-filter: blur(8px);
   z-index: 1000;
   font-size: 0.9rem;
-
-  box-sizing: border-box;
 }
 
 
