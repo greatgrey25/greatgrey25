@@ -417,7 +417,7 @@ html {
   position: fixed;
   inset: 0;
   background-color: rgba(0,0,0,0.8);
-  z-index: 10000;
+  z-index: 10000 !important;
 
   display: flex;
   justify-content: center;
@@ -441,7 +441,7 @@ html {
   color: #fff;
   font-size: 40px;
   cursor: pointer;
-  z-index; 10001;
+  z-index; 10002 !important;
 }
 
 .arrow {
