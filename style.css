@@ -298,3 +298,77 @@ footer {
   color: #777;
   text-align: center;
 }
+/* intro 섹션 기준 */
+#intro {
+  position: relative;
+  overflow: visible;
+}
+
+#intro .intro-ink {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(90, 110, 140, 0.6) 0%,
+    rgba(90, 110, 140, 0.45) 45%,
+    rgba(90, 110, 140, 0.25) 70%,
+    rgba(90, 110, 140, 0.1) 95%
+  );
+
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+
+/* 텍스트 위로 올라오게 */
+#intro h2,
+#intro p {
+  position: relative;
+  z-index: 2;
+}
+
+/* 물감 1 */
+#intro .ink1 {
+  top: 25%;
+  left: 30%;
+  width: 11px;
+  height: 11px;
+  animation: introInkSpread 1.2s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+/* 물감 2 */
+#intro .ink2 {
+  top: 65%;
+  left: 40%;
+  width: 7px;
+  height: 7px;
+  animation: introInkSpread 1.2s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* 물감 3 */
+#intro .ink3 {
+  top: 80%;
+  left: 90%;
+  width: 14px;
+  height: 14px;
+  animation: introInkSpread 1.2s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes introInkSpread {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.6;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(22);
+    opacity: 0.3;
+  }
+}
