@@ -664,3 +664,22 @@ footer {
 .instagram-link:hover .instagram-icon {
   transform: scale(1.1);
 }
+
+/* ===== 상단바 전체 폭 확장 ===== */
+header,
+.navbar,
+.nav-container {
+  width: 100%;
+  max-width: 1400px;   /* ← 숫자 키우면 더 길어짐 (1600px도 가능) */
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+/* 메뉴 간격 넉넉하게 */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
