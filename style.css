@@ -687,7 +687,7 @@ header,
 /* ===== 상단 메뉴 길이 확장 ===== */
 nav {
   width: 100%;
-  max-width: 1400px;   /* ← 숫자 키우면 더 길어짐 */
+  max-width: 1600px;   /* ← 숫자 키우면 더 길어짐 */
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
