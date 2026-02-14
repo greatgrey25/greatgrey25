@@ -670,7 +670,7 @@ header,
 .navbar,
 .nav-container {
   width: 100%;
-  max-width: 1400px;   /* ← 숫자 키우면 더 길어짐 (1600px도 가능) */
+  max-width: 1600px;   /* ← 숫자 키우면 더 길어짐 (1600px도 가능) */
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
