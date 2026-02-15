@@ -403,7 +403,7 @@ html {
 
 /* 이미지 영역 크기 비율 유지 */
 .program-image {
-  width: 400px;
+  width: 300px;
   aspect-ratio: 380 / 260; /* 이미지 원래 비율에 맞춤 */
   overflow: hidden;
   border-radius: 8px;
