@@ -179,8 +179,10 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 1500px;  /* 화면 최대 폭 */
   height: 70px;
-  padding: 0 4vw;
+  padding: 0 8vw;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
