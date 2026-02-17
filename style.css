@@ -675,3 +675,6 @@ footer {
 .instagram-link:hover .instagram-icon {
   transform: scale(1.1);
 }
+ #modal {
+  display: none; /* 페이지 열 때 숨김 */
+}
